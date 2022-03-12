@@ -1,0 +1,18 @@
+<? xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns:xsi="http://www.w3.org/XMLSchema-instance"
+  xmls="http://xmlns.jcp.org/xml/ns/javaee"
+  xsi:schemaLocation="http://xmls.jcp.org/xml/ns/javaee http://xmls.jcp.org/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.1">
+  <display-name>blog</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <sevlet-name>index-jsp</servlet-name>
+    <servlet-class>index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index-jsp</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+</web-app>

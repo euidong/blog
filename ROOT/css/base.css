@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'helvetica';
+  src:url('./css/helvetica-rmagid/Helvetica\ Bold.ttf');
+}
+
+body {
+  font-family: 'Lora',serif;
+  font-family: 'helvetica' !important;
+  padding: 20px;
+  color:#191e24;
+  font-size: 20px;
+  fond-size:1rem;
+  line-height: 2;
+  background: #f1f1f4;
+}
+pre {
+  color: #a9b7c6;
+  background: #282b2e;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+}
+img {
+  max-width:75%;
+}
+
+/* Header/Blog Title */
+
+.site-header {
+  background-color: #263340;
+  color: #fff;
+  padding: 30px 0;
+  position: relative;
+  text-align: center;
+}
+.site-header a {
+  color: #fff;
+}
+.site-header .social-header {
+  margin: 0;
+  padding: 39px 0;
+  list-style: none;
+}
+.site-header .social-header li {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.site-header .social-header li a {
+  display: block;
+  font-size: 14px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.site-header .social-header li a.facebook:hover {
+  background-color: #3b5998;
+}
+.site-header .social-header li a.twitter:hover {
+  background-color: #28a9e2;
+}
+.site-header .social-header li a.google-plus:hover {
+  background-color: #d73d32;
+}
+.site-header .row {
+  position: relative;
+}
+.site-header .menu-col {
+  position: static;
+}
+.site-header .site-branding {
+  position: relative;
+}
+.site-header .site-branding h1.site-title {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.site-header .site-branding p.site-description {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.site-header .site-branding .custom-logo-link {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -110px;
+  margin-left: -50px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.site-header .site-branding .custom-logo-link img {
+  border-radius: 50%;
+}
+.site-header.menu-active .main-navigation div.menu,
+.site-header.menu-active .main-navigation .primary-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.site-header.menu-active .site-branding h1.site-title {
+  opacity: 0;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+.site-header.menu-active .site-branding p.site-description {
+  opacity: 0;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+.site-header.menu-active .site-branding .custom-logo-link {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.site-header.menu-active .social-header li a {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width:  74.5%;
+  padding-right: 0.5%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 24.5%;
+  padding-left: 0.5%;
+  outline: none !important;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.rightcolumn .card {
+  background: #f1f1f4;
+}
+
+
+/* button make text*/
+.asText {
+  background:none;
+  border:none;
+  margin:0;
+  padding:0;
+  cursor:pointer;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #263340;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
